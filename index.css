@@ -9,11 +9,11 @@ main {
 }
 
 #section-profile{
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.6));
 }
 
 .background{
     background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
-	
 	background-size:50px 50px;
 	background-attachment: fixed;
 }
@@ -25,22 +25,27 @@ main {
 	border-radius: 50%;
 }
 
-#section-profile header{
-	height: 100vh;
-}
-
 #section-profile header h1{
 	font-size: 1.9em;
 	color:white;
 	margin:0 auto;
-	margin-bottom: .5em;
+	font-weight: bold;
 }
 
 #section-profile header h2{
-	font-size: 1.5em;
-	max-width: 300px;
+	font-size: 1.2em;
+	color:white;
+	margin:0 auto;
+	margin-bottom: 2em;
+}
+
+#section-profile header h3{
+	font-size: 1.3em;
+	max-width: 350px;
 	margin: 0 auto;
-	padding: .5em .3em;
+	color: white;
+	padding: .4em .2em;
+	border-radius: 25em;
 }
 
 #section-profile #nav{
@@ -49,19 +54,39 @@ main {
 	width: 100%;
 }
 
+#section-profile marquee{
+	overflow: hidden;
+}
+
 #section-profile marquee ul li{
 	float:left;
 	padding: 0 20px;
 	line-height: 25px;
-	border-right: 1px solid white;
 	font-size: 1.2em;
 	color: white;
 }
 
-#section-profile marquee ul li:first-child{
-	border-left: 1px solid white;
+#section-profile marquee ul li:not(:last-child){
+	
+	border-right: 1px solid white;
 }
 
 #about{
 	height: 300px;
+}
+
+footer .page-footer .footer-copyright{
+	background: rgba(0,0,0,0.8) !important;
+}
+
+@media screen and (max-width: 600px){
+	#section-profile header{
+		min-height: calc(100vh - 56px);
+	}
+}
+
+@media screen and (min-width: 601px){
+    #section-profile header{
+        min-height: calc(100vh - 64px);
+    }
 }
