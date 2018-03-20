@@ -79,6 +79,66 @@ footer .page-footer .footer-copyright{
 	background: rgba(0,0,0,0.8) !important;
 }
 
+.bg-1{
+	background: url('assets/images/bg-1.svg') no-repeat 100%;
+}
+
+.bg-fixed{
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.margin-header{
+	margin-top: 3em;
+}
+
+.bg-animate-1{
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, rgba(238, 118, 82, 0.6), rgba(231, 60, 126, 0.6), rgba(35, 165, 213, 0.6), rgba(35, 213, 171, 0.6));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 @media screen and (max-width: 600px){
 	#section-profile header{
 		min-height: calc(100vh - 56px);
