@@ -103,6 +103,10 @@ footer .page-footer .footer-copyright{
 	animation: Gradient 15s ease infinite;
 }
 
+.footer-copyright a{
+    padding: 0 .5em;
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
