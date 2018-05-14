@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Habib E. Manzur | Programador full stack</title>
@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Content-Language" content="ES-CO" >
-        <meta name="viewport" content="width=device-width, user-scalable=no" initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maximum-scale=1.0;" />
 
         <meta name="robots" content="index,follow" />
         <meta name="referrer" content="origin" />
@@ -23,11 +23,12 @@
 
         <!-- styles -->
         <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="print.css" rel="stylesheet" type="text/css" media="print">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <header class="navbar-fixed">
+        <header class="navbar-fixed no-print">
             <nav>
                 <div class="nav-wrapper red darken-3">
                   <a href="#" class="brand-logo" target="_top">
@@ -47,13 +48,13 @@
                 <div class="background">
                     <header class="valign-wrapper">
                         <div class="container">
-                            <img src="assets/images/profile.jpg">
+                            <img id="profile-picture" src="assets/images/profile.jpg">
                             <h1 class="center-align hide-on-small-only">Habid Enrique Manzur Restrepo</h1>
-                            <h2 class="center-align">Programador full stack en Medellín - Antioquia</h2>
-                            <h3 class="center-align">
+                            <h2 class="center-align">Programador full stack</h2>
+                            <h3 class="center-align no-print">
                                 <a class="btn waves-effect center-align green" href="#Perfil" mar>"Inténtalo, sal de la burbuja"</a>
                             </h3>
-                            <marquee class="">
+                            <marquee class="hide no-print">
                                 <ul>
                                     <li>
                                         <i class="material-icons left">code</i>Desarrollo web HTML5/Angularjs
@@ -82,11 +83,10 @@
             </section>
             
             <section id="Perfil" class="container">
-                <br><br><br>
                 <h3>Acerca de mí.</h3>
 
                 <p style="text-align: justify;">Nací en Barranquilla, Colombia en el año 1991. </p>
-                <p>>Me considero un desarrollador con habilidades en la programación híbrida, multi plataformas y orientadas a la nube. Experiencia en variados lenguajes de programación. Mi fuerte es el desarrollo de plataformas web y móbiles. Manejo lenguaes de código abierto y especializado en Android Nativo (Java API), PHP y despliegues utilizando  Docker engine.</p>
+                <p>Me considero un desarrollador con habilidades en la programación híbrida, multi plataformas y orientadas a la nube. Experiencia en variados lenguajes de programación. Mi fuerte es el desarrollo de plataformas web y móbiles. Manejo lenguaes de código abierto y especializado en Android Nativo (Java API), PHP y despliegues utilizando  Docker engine.</p>
                 <p style="text-align: justify;">Programador en linux como buen geek; me apoyo mucho en el uso de la consola para casi todo como es ejecutar comandos en node.js o crear proyectos basados en yeoman.
                 <p style="text-align: justify;">Soy una persona creativa, me gusta inovar, ser analítico y proactivo. Siempre busco la forma más eficiente y óptima de desarrollar mis proyectos, combinado con diseños visualmente agradables que faciliten la experiencia al usuario.</p>
                     
@@ -105,13 +105,13 @@
                 <br><br>
             </section>
 
-            <section id="Habilidades" class="bg-1 bg-fixed hide">
+            <section id="Habilidades" class="bg-1 bg-fixed no-print hide">
                     <br><br><br>
                     <h3 class="margin-header">Habilidades</h3>
 
-                <ul class="collection container hide">
+                <ul class="collection container	">
                     <li class="collection-item avatar">
-                        <img src="images/yuna.jpg" alt="" class="circle">
+                        <img src="assets/images/profile.jpg" alt="" class="circle">
                         <span class="title">Title</span>
                         <p>First Line <br>
                             Second Line
@@ -167,7 +167,7 @@
             <div class="background">
                 <div class="container">
                     <div class="row">
-                        <div class="col s12 m6 l5">
+                        <div class="col s12 m6 l5 no-print">
                             <h5 class="white-text">Contáctame</h5>
                             <p class="grey-text text-lighten-4">Si estás interesado en mi perfil o deseas que realice algún proyecto freelance, puedes ubicarme por los siguientes medios:</p>
                         </div>
@@ -194,15 +194,15 @@
                                     <br>
                                 </li>
                                 
-                                <li>
+                                <li class="no-print">
                                     <a class="grey-text text-lighten-3" href="https://www.google.com/search?q=Cómo+hacer+una+señal+de+humo">
-                                    <i class="material-icons left">whatshot</i>                                   Señal de humo</a>
+                                    <i class="material-icons left">whatshot</i>Señal de humo</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer-copyright">
+                <div class="footer-copyright no-print">
                     <div class="container">
                         Sígueme en mis redes
                         <a class="grey-text text-lighten-4 right" href="https://twitter.com/habibmanzur">Twitter</a>
