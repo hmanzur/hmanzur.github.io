@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Content-Language" content="ES-CO" >
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maximum-scale=1.0;" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 
         <meta name="robots" content="index,follow" />
         <meta name="referrer" content="origin" />
@@ -22,25 +22,28 @@
         <meta name="owner" content="Habid E. Manzur" />
 
         <!-- styles -->
-        <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet">
+        <link href="node_modules/materialize-css/dist/css/materialize.min.css" rel="stylesheet">
         <link href="assets/index.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="assets/print.css" rel="stylesheet" type="text/css" media="print">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <header class="navbar-fixed no-print">
+        <header class="navbar-fixed no-print hide-on-small-only">
             <nav>
                 <div class="nav-wrapper red darken-3">
                   <a href="#" class="brand-logo" target="_top">
-                  <i class="material-icons hide-on-small-only">code</i>Habid E. Manzur
+                    <i class="material-icons">code</i>
+                    <span>Habid E. Manzur</span>
                   </a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#Proyectos">Proyectos</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#skills"><i class="material-icons left">code</i>Skills</a></li>
+                    <li><a href="#profile"><i class="material-icons left">person</i>About me</a></li>
+                    <li><a href="#contact"><i class="material-icons left">perm_contact_calendar</i>Contact</a></li>
                   </ul>
                 </div>
-              </nav>
+            </nav>
+
+            <ul id="nav-bar" class="sidenav"></ul>
         </header>
 
         <main>
@@ -49,15 +52,15 @@
                     <header class="valign-wrapper">
                         <div class="container">
                             <img id="profile-picture" src="assets/images/profile.jpg">
-                            <h1 class="center-align hide-on-small-only">Habid Enrique Manzur Restrepo</h1>
-                            <h2 class="center-align">Programador full stack</h2>
-                            <h3 class="center-align no-print">
-                                <a class="btn waves-effect center-align green" href="#Perfil" mar>"Inténtalo, sal de la burbuja"</a>
+                            <h1 class="center-align">Habid Enrique Manzur Restrepo</h1>
+                            <h2 class="center-align">Backend developer</h2>
+                            <h3 class="center-align no-print green hide-on-small-only">
+                                "We must step down from our ivory tower"
                             </h3>
                             <marquee class="hide no-print">
                                 <ul>
                                     <li>
-                                        <i class="material-icons left">code</i>Desarrollo web HTML5/Angularjs
+                                        <i class="material-icons left">code</i>Backend developer
                                     </li>
 
                                     <li>
@@ -67,47 +70,39 @@
                                     <li>
                                         <i class="material-icons left">cloud</i>Cloud computing (AWS)
                                     </li>
-
-                                    <li>
-                                        <i class="material-icons left">invert_colors</i>Diseño gráfico
-                                    </li>
-
-                                    <li>
-                                        <i class="material-icons left">router</i>Administración de redes
-                                    </li>
                                 </ul>
                             </marquee>
                         </div>
                     </header>
                 </div>
             </section>
-            
-            <section id="Perfil" class="container">
-                <h3>Acerca de mí.</h3>
+
+            <section id="profile" class="container">
+                <h3>About me.</h3>
 
                 <p style="text-align: justify;">Nací en Barranquilla, Colombia en el año 1991. </p>
                 <p>Me considero un desarrollador con habilidades en la programación híbrida, multi plataformas y orientadas a la nube. Experiencia en variados lenguajes de programación. Mi fuerte es el desarrollo de plataformas web y móbiles. Manejo lenguaes de código abierto y especializado en Android Nativo (Java API), PHP y despliegues utilizando  Docker engine.</p>
                 <p style="text-align: justify;">Programador en linux como buen geek; me apoyo mucho en el uso de la consola para casi todo como es ejecutar comandos en node.js o crear proyectos basados en yeoman.
                 <p style="text-align: justify;">Soy una persona creativa, me gusta inovar, ser analítico y proactivo. Siempre busco la forma más eficiente y óptima de desarrollar mis proyectos, combinado con diseños visualmente agradables que faciliten la experiencia al usuario.</p>
-                    
-                <h4>Idiomas</h4>
+
+                <h4>Languages</h4>
 
                 <div class="chip">
-                    <img src="assets/images/flag_col.svg" alt="Español">
-                   Español - Nativo
+                    <img src="assets/images/flag_col.svg" alt="Spanish">
+                    Spanish - Native
                 </div>
-      
+
                 <div class="chip">
-                    <img src="assets/images/flag_eng.svg" alt="Inglés">
-                    Ingles - B2
+                    <img src="assets/images/flag_eng.svg" alt="English">
+                    English - B2
                 </div>
-                
+
                 <br><br>
             </section>
 
-            <section id="Habilidades" class="bg-1 bg-fixed no-print hide">
+            <section id="skills" class="bg-1 bg-fixed no-print hide">
                     <br><br><br>
-                    <h3 class="margin-header">Habilidades</h3>
+                    <h3 class="margin-header">Skills</h3>
 
                 <ul class="collection container	">
                     <li class="collection-item avatar">
@@ -142,10 +137,10 @@
                         </p>
                         <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                     </li>
-                </ul>   
+                </ul>
             </section>
 
-            <section id="Experiencia" class="center-align hide" >
+            <section id="experience" class="center-align hide" >
                  <div class="timeline">
                     <div class="container left">
                         <div class="content">
@@ -159,11 +154,15 @@
                         <p>Lorem ipsum..</p>
                         </div>
                     </div>
-                    </div> 
+                    </div>
             </section>
+
+            <a class="fixed-action-btn alpha btn-floating btn-large waves-effect waves-light red no-print" onclick="window.print()">
+                <i class="material-icons left">print</i>Print
+            </a>
         </main>
-            
-        <footer id="Contacto" class="page-footer grey darken-3">
+
+        <footer id="contact" class="page-footer grey darken-3">
             <div class="background">
                 <div class="container">
                     <div class="row">
@@ -172,7 +171,7 @@
                             <p class="grey-text text-lighten-4">Si estás interesado en mi perfil o deseas que realice algún proyecto freelance, puedes ubicarme por los siguientes medios:</p>
                         </div>
                         <div class="col s12 m6 l6 offset-l1">
-                            <h5 class="white-text">Medios de contacto</h5>
+                            <h5 class="white-text">Medios de Contact</h5>
                             <ul class="white-text">
                                 <li>
                                     <a class="grey-text text-lighten-3" href="tel:+573507798055">
@@ -193,10 +192,10 @@
                                 <li>
                                     <br>
                                 </li>
-                                
+
                                 <li class="no-print">
-                                    <a class="grey-text text-lighten-3" href="https://www.google.com/search?q=Cómo+hacer+una+señal+de+humo">
-                                    <i class="material-icons left">whatshot</i>Señal de humo</a>
+                                    <a class="grey-text text-lighten-3" href="https://www.google.com/search?q=How+do+you+send+a+smoke+signal">
+                                    <i class="material-icons left">whatshot</i>Smoke signal</a>
                                 </li>
                             </ul>
                         </div>
@@ -204,9 +203,22 @@
                 </div>
                 <div class="footer-copyright no-print">
                     <div class="container">
-                        Sígueme en mis redes
-                        <a class="grey-text text-lighten-4 right" href="//twitter.com/habibmanzur" target="_blank">Twitter</a>
-                        <a class="grey-text text-lighten-4 right" href="//www.linkedin.com/in/habibmanzur/" target="_blank">LinkedIn</a>
+                        <div class="row">
+                            Sígueme en mis redes
+
+                            <div class="hide-on-small-only">
+                                <a class="grey-text text-lighten-4 right" href="//twitter.com/habibmanzur" target="_blank">Twitter</a>
+                                <a class="grey-text text-lighten-4 right" href="//www.linkedin.com/in/habibmanzur/" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <div class="col s12 row hide-on-med-and-up">
+                            <a class="col btn s12" href="//twitter.com/habibmanzur" target="_blank" style="background-color: #33CCFF;">Twitter</a>
+
+                            <div class="col s12" style="height: .5em"></div>
+
+                            <a class="col  btn s12" href="//www.linkedin.com/in/habibmanzur" target="_blank" style="background-color: #4875B4;">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,6 +227,12 @@
     </body>
 
     <!-- scripts -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('nav-mobile').innerHTML = document.getElementById('nav-bar').innerHTML;
+            M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        });
+    </script>
 </html>
