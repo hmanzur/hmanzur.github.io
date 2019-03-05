@@ -3,20 +3,24 @@
         size: letter portrait;
         margin: 2.0cm;
     }
-	
+
 	.no-print{
 		display:none !important;
 	}
-	
+
+	.no-print-background, background{
+		background-image: none !important;
+	}
+
 	.chip{
 		background: white !important;
 	}
-	
+
 	#section-profile,
 	#section-profile .background{
 		background-color:transparent !important;
 	}
-	
+
 	#section-profile .container{
 	}
 
@@ -30,14 +34,14 @@
 		font-size: 1cm;
 		margin-bottom: 0;
 	}
-	
-	h3{	
-		font-size: .8cm;		
+
+	h3{
+		font-size: .8cm;
 		font-weight: bold;
 	}
-	
-	h4{	
-		font-size: .6cm;		
+
+	h4{
+		font-size: .6cm;
 		font-weight: bold;
 	}
 
@@ -45,7 +49,7 @@
 		font-size: .6cm;
 		margin-top:  0;
 	}
-	
+
 	#Contacto,
 	#Contacto *{
 		background: transparent !important;

@@ -22,6 +22,7 @@
         <meta name="owner" content="Habid E. Manzur" />
 
         <!-- styles -->
+        <link rel="manifest" href="/manifest.json">
         <link href="node_modules/materialize-css/dist/css/materialize.min.css" rel="stylesheet">
         <link href="assets/index.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="assets/print.css" rel="stylesheet" type="text/css" media="print">
@@ -52,7 +53,7 @@
                 <div class="background">
                     <header class="valign-wrapper">
                         <div class="container">
-                            <img id="profile-picture" src="assets/images/profile.jpg">
+                            <img id="profile-picture" src="assets/images/profile.jpg" alt="Profile">
                             <h1 class="center-align">Habid Enrique Manzur Restrepo</h1>
                             <h2 class="center-align">Backend developer</h2>
                             <h3 class="center-align no-print green hide-on-small-only">
@@ -101,44 +102,12 @@
                 <br><br>
             </section>
 
-            <section id="skills" class="bg-1 bg-fixed no-print hide">
-                    <br><br><br>
-                    <h3 class="margin-header">Skills</h3>
+            <section id="skills" class="bg-1 bg-fixed">
+                <div class="white">
+                    <h3 class="container">Skills</h3>
+                </div>
 
-                <ul class="collection container	">
-                    <li class="collection-item avatar">
-                        <img src="assets/images/profile.jpg" alt="" class="circle">
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle">folder</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle green">insert_chart</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle red">play_arrow</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                    </li>
-                </ul>
+
             </section>
 
             <section id="experience" class="center-align hide" >
@@ -163,73 +132,63 @@
             </a>
         </main>
 
-        <footer id="contact" class="page-footer grey darken-3">
-            <div class="background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m6 l5 no-print">
-                            <h5 class="white-text">Contáctame</h5>
-                            <p class="grey-text text-lighten-4">Si estás interesado en mi perfil o deseas que realice algún proyecto freelance, puedes ubicarme por los siguientes medios:</p>
-                        </div>
-                        <div class="col s12 m6 l6 offset-l1">
-                            <h5 class="white-text">Medios de Contact</h5>
-                            <ul class="white-text hide-on-small-only">
-                                <li>
-                                    <a class="grey-text text-lighten-3 " href="tel:+573507798055">
-                                        <i class="material-icons left">phone</i>
-                                        +57 (350) 779 8055
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <br>
-                                </li>
-
-                                <li>
-                                    <a class="grey-text text-lighten-3" href="mailto:habibmanzur@outlook.com">
-                                    <i class="material-icons left">mail</i>habibmanzur@outlook.com</a>
-                                </li>
-
-                                <li>
-                                    <br>
-                                </li>
-
-                                <li class="no-print">
-                                    <a class="grey-text text-lighten-3" href="https://www.google.com/search?q=How+do+you+send+a+smoke+signal">
-                                    <i class="material-icons left">whatshot</i>Smoke signal</a>
-                                </li>
-                            </ul>
-
-                            <div class="white-text hide-on-med-and-up row no-print">
-                                <a class="grey-text text-lighten-3 btn col s12 blue" href="tel:+573507798055">
+        <footer id="contact" class="page-footer grey darken-3 background no-print-background">
+            <div class="container">
+                    <h5 class="white-text">Contact means</h5>
+                    <ul class="white-text hide-on-small-only">
+                            <li>
+                                <a class="grey-text text-lighten-3 " href="tel:+573507798055">
                                     <i class="material-icons left">phone</i>
                                     +57 (350) 779 8055
                                 </a>
+                            </li>
 
-                                <div class="col s12" style="height: .5em"></div>
+                            <li>
+                                <br>
+                            </li>
 
-                                <a class="grey-text text-lighten-3 btn col s12 red" href="mailto:habibmanzur@outlook.com">
-                                    <i class="material-icons left">mail</i>habibmanzur@outlook.com
-                                </a>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="mailto:habibmanzur@outlook.com">
+                                <i class="material-icons left">mail</i>habibmanzur@outlook.com</a>
+                            </li>
 
-                                <div class="col s12" style="height: .5em"></div>
+                            <li>
+                                <br>
+                            </li>
 
-                                <a class="grey-text text-lighten-3 btn col s12 grey darken-1"
-                                   href="https://www.google.com/search?q=How+do+you+send+a+smoke+signal">
-                                    <i class="material-icons left">whatshot</i>Smoke signal
-                                </a>
-                            </div>
-                        </div>
+                            <li class="no-print">
+                                <a class="grey-text text-lighten-3" href="https://www.google.com/search?q=How+do+you+send+a+smoke+signal">
+                                <i class="material-icons left">whatshot</i>Smoke signal</a>
+                            </li>
+                        </ul>
+
+
+                    <div class="white-text hide-on-med-and-up row no-print">
+                        <a class="grey-text text-lighten-3 btn col s12 blue" href="tel:+573507798055">
+                            <i class="material-icons left">phone</i>
+                            +57 (350) 779 8055
+                        </a>
+
+                        <div class="col s12" style="height: .5em"></div>
+
+                        <a class="grey-text text-lighten-3 btn col s12 red" href="mailto:habibmanzur@outlook.com">
+                            <i class="material-icons left">mail</i>habibmanzur@outlook.com
+                        </a>
+
+                        <div class="col s12" style="height: .5em"></div>
+
+                        <a class="grey-text text-lighten-3 btn col s12 grey darken-1"
+                           href="https://www.google.com/search?q=How+do+you+send+a+smoke+signal">
+                            <i class="material-icons left">whatshot</i>Smoke signal
+                        </a>
                     </div>
                 </div>
-                <div class="footer-copyright no-print">
+            <div class="footer-copyright no-print">
                     <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                Sígueme en mis redes
-                            </div>
+                        <div>
+                            <span>Sígueme en mis redes</span>
 
-                            <div class="col hide-on-small-only">
+                            <span class="hide-on-small-only">
                                 <a class="grey-text text-lighten-4 right"
                                    href="//twitter.com/habibmanzur" target="_blank">
                                     <i class="material-icons custom-icon twitter">i</i>
@@ -239,10 +198,10 @@
                                    href="//www.linkedin.com/in/habibmanzur/" target="_blank">
                                     <i class="material-icons custom-icon linkedin">i</i>
                                 </a>
-                            </div>
+                            </span>
                         </div>
 
-                        <div class="col s12 row hide-on-med-and-up">
+                        <div class="s12 row hide-on-med-and-up">
                             <a class="col btn s12" href="//twitter.com/habibmanzur"
                                target="_blank" style="background-color: #33CCFF;">
                                 <i class="left material-icons custom-icon twitter">i</i>Twitter
@@ -257,9 +216,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </footer>
-
     </body>
 
     <!-- scripts -->
@@ -270,5 +227,19 @@
             document.getElementById('nav-bar').innerHTML = document.getElementById('nav-mobile').innerHTML;
             M.Sidenav.init(document.querySelectorAll('.sidenav'));
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.userChoice.then(function(choiceResult) {
+
+                console.log(choiceResult.outcome);
+
+                if(choiceResult.outcome === 'dismissed') {
+                    console.log('User cancelled home screen install');
+                }
+                else {
+                    console.log('User added to home screen');
+                }
+            });
+        })
     </script>
 </html>
