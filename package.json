@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "materialize-css": "latest"
+  },
+  "scripts": {
+    "start": "http-server -p 8080 --cors -c-1"
   }
 }

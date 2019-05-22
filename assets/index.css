@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	display: flex;
 	min-height: 100vh;
@@ -8,70 +12,10 @@ main {
 	flex: 1 0 auto;
 }
 
-#section-profile{
-	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.6));
-}
-
-#skills {
-	padding: 3em 0;
-}
-
 .background{
     background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
 	background-size:50px 50px;
 	background-attachment: fixed;
-}
-
-#section-profile img{
-	display: block;
-	margin: 0 auto;
-	width: 200px;
-	border-radius: 50%;
-}
-
-#section-profile header h1{
-	font-size: 1.9em;
-	color:white;
-	margin:0 auto;
-	font-weight: bold;
-}
-
-#section-profile header h2{
-	font-size: 1.1em;
-	color:white;
-	margin: 0 auto 1em;
-}
-
-#section-profile header h3{
-	font-size: 1.3em;
-	max-width: 400px;
-	margin: 0 auto;
-	color: white;
-	padding: .4em .2em;
-	border-radius: 25em;
-}
-
-#section-profile #nav{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-#section-profile marquee{
-	overflow: hidden;
-}
-
-#section-profile marquee ul li{
-	float:left;
-	padding: 0 20px;
-	line-height: 25px;
-	font-size: 1.2em;
-	color: white;
-}
-
-#section-profile marquee ul li:not(:last-child){
-
-	border-right: 1px solid white;
 }
 
 #about{
@@ -136,6 +80,79 @@ footer .footer-copyright{
 	background-image: url("icons/twitter.svg");
 }
 
+
+
+#section-profile{
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.6));
+
+	border-bottom-left-radius: 50% 20%;
+	border-bottom-right-radius: 50% 20%;
+}
+
+#section-profile img{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	border-radius: 50%;
+}
+
+#section-profile header h1{
+	font-size: 1.9em;
+	color:white;
+	margin:0 auto;
+	font-weight: bold;
+}
+
+#section-profile header h2{
+	font-size: 1.1em;
+	color:white;
+	margin: 0 auto 1em;
+}
+
+#section-profile header h3{
+	font-size: 1.3em;
+	max-width: 400px;
+	margin: 0 auto;
+	color: white;
+	padding: .4em .2em;
+	border-radius: 25em;
+}
+
+#section-profile #nav{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#section-profile marquee{
+	overflow: hidden;
+}
+
+#section-profile marquee ul li{
+	float:left;
+	padding: 0 20px;
+	line-height: 25px;
+	font-size: 1.2em;
+	color: white;
+}
+
+#section-profile marquee ul li:not(:last-child){
+	border-right: 1px solid white;
+}
+
+#skills {
+	padding: 3em 0 6em;
+	height: 100vh;
+	clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 10vh) );
+	margin-bottom: -10vh;
+	z-index: -1;
+}
+
+
+#profile h3 {
+	padding-top: 70px;
+}
+
 .custom-icon.linkedin {
 	background-image: url("icons/linkedin.svg");
 }
@@ -176,19 +193,27 @@ footer .footer-copyright{
 	}
 }
 
+/* Desktop */
 @media screen and (max-width: 600px){
 	#section-profile header{
-		min-height: 100vh;
+		min-height: 125vh;
+		padding-bottom: 25vh;
 	}
 
 	.fixed-action-btn {
 		top: 10vh;
 	}
+
+	#contact {
+		padding-top: 10vh;
+	}
 }
 
+/* Mobile */
 @media screen and (min-width: 601px){
     #section-profile header{
-        min-height: calc(100vh - 64px);
+		min-height: calc(125vh - 64px);
+		padding-bottom: 25vh;
     }
 
 	.fixed-action-btn {
